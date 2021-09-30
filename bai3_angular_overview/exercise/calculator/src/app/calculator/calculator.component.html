@@ -1,0 +1,11 @@
+<h3>Calculator</h3><br>
+<input class="input-text" type="number" placeholder="number 1" #num1>
+<input class="input-text" type="number" placeholder="number 2" #num2>
+<br>
+<button class="btn btn-dark" (click)="calculator(num1.value , num2.value ,'+')">+</button>
+<button class="btn btn-dark" (click)="calculator(num1.value , num2.value ,'-')">-</button>
+<button class="btn btn-dark" (click)="calculator(num1.value , num2.value ,'*')">*</button>
+<button class="btn btn-dark" (click)="calculator(num1.value , num2.value ,'/')">/</button>
+
+<br>
+{{result}}
