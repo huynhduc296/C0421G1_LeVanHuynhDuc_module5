@@ -1,0 +1,72 @@
+{
+  "product": [
+    {
+      "name": "1",
+      "price": 1,
+      "description": "1",
+      "category": {
+        "id": 1,
+        "name": "iphone"
+      },
+      "id": 2
+    },
+    {
+      "name": "5",
+      "price": 5,
+      "description": "5",
+      "category": {
+        "id": 2,
+        "name": "samsung"
+      },
+      "id": 3
+    },
+    {
+      "name": "4",
+      "price": 4,
+      "description": "4",
+      "category": {
+        "id": 2,
+        "name": "samsung"
+      },
+      "id": 4
+    },
+    {
+      "name": "4",
+      "price": 4,
+      "description": "4",
+      "category": {
+        "name": "lg1",
+        "id": 3
+      },
+      "id": 5
+    },
+    {
+      "name": "1",
+      "price": 2132,
+      "description": "qweq",
+      "category": {
+        "id": 2,
+        "name": "samsung"
+      },
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "iphone"
+    },
+    {
+      "id": 2,
+      "name": "samsung"
+    },
+    {
+      "name": "lg1",
+      "id": 3
+    },
+    {
+      "name": "123",
+      "id": 4
+    }
+  ]
+}

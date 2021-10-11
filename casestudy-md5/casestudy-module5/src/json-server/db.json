@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Tien",
+      "position": "Nhan Vien",
+      "level": "12/12",
+      "part": "Kinh doanh",
+      "dateOfBirth": "2000-06-12",
+      "idCart": "1234234212",
+      "salary": "8",
+      "email": "duc@gmail.com",
+      "phone": "096612311",
+      "address": "Nghe An"
+    },
+    {
+      "fullName": "Duc",
+      "position": "NhanVien",
+      "level": "qwewqe",
+      "part": "1232",
+      "dateOfBirth": "",
+      "idCart": "123124123",
+      "salary": "12222",
+      "email": "duc@gial.com",
+      "phone": "1234123422",
+      "address": "ewqesad",
+      "id": 4
+    }
+  ],
+  "Customers": [
+    {
+      "id": 1,
+      "fullName": "Nguyen B",
+      "email": "Tung@gial.com",
+      "phone": "065649266"
+    },
+    {
+      "id": 1,
+      "fullName": "Nguyen B",
+      "email": "Tung@gial.com",
+      "phone": "065649266"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<h3 class="text-center">Chỉnh Sửa Thông Tin Nhân Viên</h3>
+
+<form class="w-75 mx-auto mt-3"[formGroup]="formEditEmployee">
+  <div class="form-group">
+    <p>Họ Tên</p>
+    <input class="form-control"type="text" formControlName="fullName">
+    <p *ngIf="formEditEmployee.controls.fullName.errors?.required && formEditEmployee.controls.fullName.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+  <div class="form-group">
+    <p>Vị Trí</p>
+    <input class="form-control"type="text" formControlName="position">
+    <p *ngIf="formEditEmployee.controls.position.errors?.required && formEditEmployee.controls.position.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+  <div class="form-group">
+    <p>Trình Độ</p>
+    <input class="form-control"type="text " formControlName="level">
+    <p *ngIf="formEditEmployee.controls.level.errors?.required && formEditEmployee.controls.level.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+  <div class="form-group">
+    <p>Bộ Phận</p>
+    <input class="form-control"type="text" formControlName="part">
+    <p *ngIf="formEditEmployee.controls.part.errors?.required && formEditEmployee.controls.part.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+  <div class="form-group">
+    <p>Ngày Sinh</p>
+    <mat-form-field>
+      <input [min]="minDate" [max]="maxDate" class="form-control"formControlName="dateOfBirth" matInput [matDatepicker]="myDatepicker">
+      <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+      <mat-datepicker #myDatepicker></mat-datepicker>
+    </mat-form-field>
+    <p *ngIf="formEditEmployee.controls.dateOfBirth.errors?.required && formEditEmployee.controls.dateOfBirth.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+  <div class="form-group">
+    <p>CMND</p>
+    <input class="form-control"type="text" formControlName="idCart">
+    <p *ngIf="formEditEmployee.controls.idCart.errors?.required && formEditEmployee.controls.idCart.touched" class="text-danger">vui lòng Nhập</p>
+    <p *ngIf="formEditEmployee.controls.idCart.errors?.pattern && formEditEmployee.controls.idCart.touched" class="text-danger">CMND k đúng đinh dạng</p>
+  </div>
+  <div class="form-group">
+    <p>Lương</p>
+    <input class="form-control"type="text" formControlName="salary">
+    <p *ngIf="formEditEmployee.controls.salary.errors?.required && formEditEmployee.controls.salary.touched" class="text-danger">vui lòng Nhập</p>
+    <p *ngIf="formEditEmployee.controls.salary.errors?.pattern && formEditEmployee.controls.salary.touched" class="text-danger">k đúng đinh dạng</p>
+  </div>
+  <div class="form-group">
+    <p>email</p>
+    <input class="form-control"type="text" formControlName="email">
+    <p *ngIf="formEditEmployee.controls.email.errors?.required && formEditEmployee.controls.email.touched" class="text-danger">
+      vui lòng Nhập</p>
+    <p *ngIf="formEditEmployee.controls.email.errors?.email && formEditEmployee.controls.email.touched" class="text-danger">
+      Email k đúng định dạng</p>
+  </div>
+  <div class="form-group">
+    <p>số DT</p>
+    <input class="form-control"type="text" formControlName="phone">
+    <p *ngIf="formEditEmployee.controls.phone.errors?.required && formEditEmployee.controls.phone.touched" class="text-danger">vui lòng Nhập</p>
+    <p *ngIf="formEditEmployee.controls.phone.errors?.pattern && formEditEmployee.controls.phone.touched" class="text-danger">số DT k đúng định dạng</p>
+  </div>
+  <div class="form-group">
+    <p>Dịa Chỉ</p>
+    <input class="form-control"type="text" formControlName="address">
+    <p *ngIf="formEditEmployee.controls.address.errors?.required && formEditEmployee.controls.address.touched" class="text-danger">vui lòng Nhập</p>
+  </div>
+</form>
+<div class="row d-flex justify-content-center mt-5">
+  <button [disabled]="formEditEmployee.invalid" class="btn btn-success" (click)="editEmployee()">Edit</button>
+</div>
+
